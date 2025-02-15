@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Index</title>
+    <meta charset="UTF-8" />
+
+  </head>
+  <body>
+      <section class="hero">
+          <div class="hero-area">
+            <div class="hero-text">
+                <h1>Syed Sameer Rizvi</h1>
+                <p>DS-221016</p>
+            </div>
+          </div>
+      </section>
+     
+      
+    
+    <script src="src/app.js"></script>
+    <!-- Place this script at the end of the body -->
+<script>
+    function scrollSlider(direction) {
+        const slider = document.querySelector('.project-slider');
+        const cardWidth = document.querySelector('.project-card').offsetWidth;
+        slider.scrollBy({
+            left: direction * cardWidth,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+  </body>
+</html>
